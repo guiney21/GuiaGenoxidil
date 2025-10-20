@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Nome do Produto] - Saúde e Bem-Estar Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Reset básico */
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+  body { background-color: #fff; color: #333; line-height: 1.6; }
+
+  a { text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  /* Botões */
+  .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background-color: #028a63; /* verde-esmeralda */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  .btn-primary:hover {
+    background-color: #026746;
+    transform: translateY(-2px);
+  }
+  .btn-whatsapp {
+    background-color: #25D366;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-whatsapp:hover { background-color: #1DA851; }
+
+  /* Seções */
+  section { padding: 80px 20px; }
+  .container { max-width: 1200px; margin: 0 auto; }
+
+  /* Banner principal */
+  #banner {
+    background: url('https://images.unsplash.com/photo-1588776814546-ff3e598bfc58?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+  }
+  #banner h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 20px; }
+  #banner .fade-in { animation: fadeIn 1.5s ease forwards; opacity: 0; }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  /* Sobre o Produto */
+  #sobre { text-align: center; }
+  #sobre img { width: 300px; margin: 20px 0; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
+  #sobre p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+
+  /* Benefícios */
+  #beneficios { background-color: #f5f5f5; }
+  .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }
+  .card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  .card:hover { transform: translateY(-5px); }
+  .card h3 { margin: 15px 0; font-size: 1.1rem; color: #028a63; }
+
+  /* Depoimentos */
+  #depoimentos { text-align: center; }
+  .depoimentos-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
+  .depoimento {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  .depoimento img { width: 70px; height: 70px; border-radius: 50%; margin-bottom: 15px; }
+  .depoimento .stars { color: #FFD700; margin-bottom: 10px; }
+
+  /* Garantia e Segurança */
+  #garantia { background-color: #d4f1e0; text-align: center; }
+  .garantia-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }
+  .garantia-card { background: #fff; border-radius: 15px; padding: 20px; width: 220px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; }
+  .garantia-card h4 { color: #028a63; margin-top: 10px; }
+
+  /* Chamada para ação */
+  #cta { text-align: center; }
+  #cta h2 { font-size: 2rem; margin-bottom: 20px; color: #028a63; }
+
+  /* Conte comigo */
+  #conte-comigo { display: flex; flex-wrap: wrap; align-items: center; gap: 40px; }
+  #conte-comigo img { width: 350px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+  #conte-comigo div { flex: 1; }
+  #conte-comigo h3 { font-size: 1.8rem; color: #028a63; margin-bottom: 15px; }
+  #conte-comigo p { font-size: 1rem; margin-bottom: 20px; line-height: 1.5; }
+
+  /* Responsividade */
+  @media(max-width: 992px) { 
+    .cards, .depoimentos-cards, .garantia-cards, #conte-comigo { flex-direction: column; align-items: center; }
+    #conte-comigo img { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Seção 1 — Banner Principal -->
+<!-- Seção 1 — Banner Principal -->
+<section id="banner">
+  <div class="container fade-in">
+    <h1>Descubra o poder de Genoxidil — a revolução natural que transforma seu corpo de dentro para fora.</h1>
+    <a href="#beneficios" class="btn btn-primary">QUERO SABER MAIS</a>
+  </div>
+</section>
+
+<style>
+  #banner {
+    background: url('https://distribuidornbn.com.br/wp-content/uploads/2022/09/genoxidil-1-1024x920.png') center center/cover no-repeat;
+    color: #12c722;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #banner::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* escurece o fundo para destacar o texto */
+    z-index: 0;
+    border-radius: 0;
+  }
+
+  #banner .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  #banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    z-index: 1;
+  }
+</style>
+
+<!-- Seção 2 — Sobre o Produto -->
+<section id="sobre">
+  <div class="container">
+    <h2>Descubra o poder de Genoxidil</h2>
+    <img src="https://http2.mlstatic.com/D_NQ_NP_692762-MLA94005363797_102025-O.webp" alt="Frasco do Produto">
+    <p>Genoxidil é um suplemento inovador, desenvolvido com ativos 100% naturais e tecnologia de ponta em nanotecnologia, que potencializa a absorção e eficácia dos ingredientes. Sua fórmula avançada atua diretamente na regeneração celular, ajudando a revitalizar o corpo de dentro para fora. Além disso, contribui para o equilíbrio hormonal, promovendo mais disposição e vitalidade ao longo do dia. Com Genoxidil, você não só reforça a saúde do seu organismo, como também melhora a energia diária, fortalecendo cabelos, unhas e pele de forma natural. Experimente a inovação que combina ciência e natureza para transformar seu bem-estar de maneira visível e duradoura."</p>
+  </div>
+</section>
+
+<style>
+  #sobre {
+    background-color: #e6f5ea; /* verde bem clarinho */
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  #sobre img {
+    max-width: 300px; /* ajusta o tamanho da imagem */
+    margin: 20px 0;
+  }
+
+  #sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c6b4f; /* verde escuro para contraste com o fundo */
+  }
+
+  #sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+</style>
+<!-- Seção 3 — Benefícios -->
+<section id="beneficios">
+  <div class="container">
+    <h2>Benefícios</h2>
+    <div class="cards">
+      <div class="card"><h3>💪 Aumenta energia e disposição</h3></div>
+      <div class="card"><h3>💚 Fortalece o sistema imunológico</h3></div>
+      <div class="card"><h3>🧠 Melhora foco e clareza mental</h3></div>
+      <div class="card"><h3>🔥 Acelera o metabolismo e queima de gordura</h3></div>
+      <div class="card"><h3>💧 Hidrata e rejuvenesce a pele</h3></div>
+      <div class="card"><h3>💤 Melhora a qualidade do sono</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção 4 — Depoimentos -->
+<section id="depoimentos">
+  <div class="container">
+    <h2>Depoimentos</h2>
+    <div class="depoimentos-cards">
+      <div class="depoimento">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Senti uma diferença incrível na minha energia e disposição desde que comecei a usar!"</p>
+        <strong>- João Silva</strong>
+      </div>
+      <div class="depoimento">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 2">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Minha pele nunca esteve tão saudável e hidratada. Recomendo totalmente."</p>
+        <strong>- Maria Santos</strong>
+      </div>
+      <div class="depoimento">
+        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Cliente 3">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"A melhora no foco mental foi surpreendente, além de me sentir mais disposto no dia a dia."</p>
+        <strong>- Carlos Pereira</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção 5 — Garantia e Segurança -->
+<section id="garantia">
+  <div class="container">
+    <h2>Garantia e Segurança</h2>
+    <div class="garantia-cards">
+      <div class="garantia-card">
+        <h4>Produto 100% original</h4>
+      </div>
+      <div class="garantia-card">
+        <h4>Envio rápido para todo o Brasil</h4>
+      </div>
+      <div class="garantia-card">
+        <h4>Suporte via WhatsApp</h4>
+      </div>
+      <div class="garantia-card">
+        <h4>Nota fiscal e pagamento seguro</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção 6 — Chamada para Ação -->
+<section id="cta">
+  <div class="container">
+    <h2>Garanta o seu agora com DESCONTO ESPECIAL por tempo limitado!</h2>
+    <a href="#conte-comigo" class="btn btn-primary">COMPRAR AGORA</a>
+  </div>
+</section>
+
+<!-- Seção 7 — Conte comigo nessa jornada -->
+<section id="conte-comigo">
+  <div class="container">
+    <div style="flex:1">
+      <img src="https://images.unsplash.com/photo-1603415526960-fb7b83a503b5?auto=format&fit=crop&w=800&q=80" alt="Representante">
+    </div>
+    <div style="flex:1">
+      <h3>CONTE COMIGO NESSA JORNADA</h3>
+      <p>Prazer, WAGNER MONTEIRO</p>
+      <p>Entendemos que a nossa maior riqueza são os nossos parceiros e o sucesso deles o nosso maior objetivo.</p>
+      <p>Através de uma equipe estruturada e um suporte profissional, você receberá apoio e um atendimento 100% gratuito.</p>
+      <p>Se você busca saúde e bem-estar e quer chegar no seu próximo nível, venha crescer com a gente e mude hoje mesmo a sua história. Afinal, já abrimos o caminho até o topo e sabemos como levar você até lá.</p>
+      <a href="https://wa.me/5592999999999" class="btn btn-whatsapp">🟢 FALE COMIGO AQUI</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
